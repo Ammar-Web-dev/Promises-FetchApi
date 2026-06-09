@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="navbar">
+      <a href="#" style="color: #2B235A">Lahore</a>
+      <a href="#" style="color: #2B235A">Islamabad</a>
+      <a href="#" style="color: #2B235A">Karachi</a>
+    </div>
     <h1>Promises&Fetch Api</h1>
+    <h2 style="color: cornflowerblue;">Weather App</h2>
     <form
       onsubmit="
         getWeather();
@@ -17,7 +24,11 @@
       <button>Click</button>
     </form>
     <div id="weatherResult"></div>
+    <div id="weatherlogo">
+      <img src="./image.png" alt="weatherlogo" width="30">
+    </div>
 
     <script src="index.js"></script>
+    
   </body>
 </html>

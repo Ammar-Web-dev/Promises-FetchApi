@@ -1,0 +1,28 @@
+#weatherResult{
+    color: #2B235A;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#weatherResult{
+    margin-top: 30px;
+    width: 400px;
+    padding: 10px;
+
+    border-radius: 12px;
+
+    background-color: #8FE0FF;
+
+}
+#weatherlogo{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.navbar {
+  width: 24%;
+  background-color: #8FE0FF ;
+  height: 25px;
+  position: sticky;
+  top: 8px;
+  border-radius: 20px;
+  padding-left: 5px;
+}
