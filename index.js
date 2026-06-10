@@ -41,14 +41,17 @@ function getWeather() {
     })
     .then((data) => {
       const wetherInfo = document.getElementById("weatherResult");
-      wetherInfo.innerText = `Cureent temperature in ${city} is ${data.current.temp_c} degree celcius.
-      feels like in ${city} is ${data.current.feelslike_c} degree ceclcius 
-      WindChill  in ${city} is ${data.current.windchill_c} degree celcius, 
-      HeatIndex in ${city} Is ${data.current.heatindex_c} degree celcius, 
-      Speed of wind in ${city} is ${data.current.wind_kph} Km/h, 
-      Direction of Wind in ${city} is ${data.current.wind_degree} degree, 
-      Chance of rain in ${city} is ${data.current.chance_of_rain}%, 
-      Chance of snow in ${city} is ${data.current.chance_of_snow}%`;
+      wetherInfo.innerHTML = `
+      <div class="weathercard">
+      <h3>${city}</h3>
+      <p> Temperature: ${data.current.temp_c}°C </p>
+      <p> Feels Like: ${data.current.feelslike_c}°C </p>
+      <p> Wind Speed: ${data.current.wind_kph}km/h </p>
+      <p> Wind Direction: ${data.current.wind_degree}°</p>
+      <p> Chance of Rain: ${data.current.chance_of_rain}%</p>
+      <p> Chance of Snow: ${data.current.chance_of_snow}%</p>
+      </div>
+      `;
     })
     .catch((err) => {
       console.log(err);
